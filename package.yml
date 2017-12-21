@@ -1,0 +1,16 @@
+name       : libircclient
+version    : 1.9
+release    : 1
+source     :
+    - https://gigenet.dl.sourceforge.net/project/libircclient/libircclient/1.9/libircclient-1.9.tar.gz : 81c397eee618667bccfe8960352ba5f829c8c2e9badc270594b91128cd89c064
+license    : GPL-2.0
+component  : programming.library
+summary    : Libircclient is a small but extremely powerful library which implements the client IRC protocol. It is designed to be small, fast, portable and compatible with the RFC standards as well as non-standard but popular features. It is perfect for building the IRC clients and bots.
+description: |
+    Libircclient is a small but extremely powerful library which implements the client IRC protocol. It is designed to be small, fast, portable and compatible with the RFC standards as well as non-standard but popular features. It is perfect for building the IRC clients and bots.
+setup      : |
+    %configure --enable-openssl --enable-ipv6 --enable-shared
+build      : |
+    %make
+install    : |
+    %make_install

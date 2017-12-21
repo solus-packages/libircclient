@@ -1,0 +1,48 @@
+<PISI>
+    <Source>
+        <Name>libircclient</Name>
+        <Packager>
+            <Name>Zach Bacon</Name>
+            <Email>zachbacon@budgiemedia.rocks</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">Libircclient is a small but extremely powerful library which implements the client IRC protocol. It is designed to be small, fast, portable and compatible with the RFC standards as well as non-standard but popular features. It is perfect for building the IRC clients and bots.</Summary>
+        <Description xml:lang="en">Libircclient is a small but extremely powerful library which implements the client IRC protocol. It is designed to be small, fast, portable and compatible with the RFC standards as well as non-standard but popular features. It is perfect for building the IRC clients and bots.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>libircclient</Name>
+        <Summary xml:lang="en">Libircclient is a small but extremely powerful library which implements the client IRC protocol. It is designed to be small, fast, portable and compatible with the RFC standards as well as non-standard but popular features. It is perfect for building the IRC clients and bots.</Summary>
+        <Description xml:lang="en">Libircclient is a small but extremely powerful library which implements the client IRC protocol. It is designed to be small, fast, portable and compatible with the RFC standards as well as non-standard but popular features. It is perfect for building the IRC clients and bots.
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libircclient-devel</Name>
+        <Summary xml:lang="en">Development files for libircclient</Summary>
+        <Description xml:lang="en">Libircclient is a small but extremely powerful library which implements the client IRC protocol. It is designed to be small, fast, portable and compatible with the RFC standards as well as non-standard but popular features. It is perfect for building the IRC clients and bots.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">libircclient</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-12-21</Date>
+            <Version>1.9</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Zach Bacon</Name>
+            <Email>zachbacon@budgiemedia.rocks</Email>
+        </Update>
+    </History>
+</PISI>
